@@ -57,9 +57,9 @@ MongoClient.connect('mongodb://localhost:27017', (err, client) => {
     //     console.log(result);
     // });
 
-    // db.collection("FED2101FirstMongo").deleteMany({taskName: "Task1"}).then((result) => {
-    //     console.log(result);
-    // });
+    db.collection("FED2101FirstMongo").deleteMany({taskName: "Task1"}).then((result) => {
+        console.log(result);
+    });
 
     //Read
     // console.log(db.collection("FED2101FirstMongo").find({taskName: "Learn Node"}));
@@ -67,7 +67,7 @@ MongoClient.connect('mongodb://localhost:27017', (err, client) => {
     //     console.log(result);
     // });
 
-    
+
 
     client.close();
 });
